@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <title>Mi porfolio</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  
+  <link rel="stylesheet" href="/css/style.css" />
+  <!--
+  <link rel="stylesheet" href="/css/style.css" />
+  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    
+    <div class="mvc-top">
+      <div class="mvc-bar" id="myNavbar">
+        <a href="/" class="mvc-bar-item mvc-button">INICIO</a>
+        <a href="/about.html" class="mvc-bar-item mvc-button mvc-hide-small"
+          ><i class="fa fa-user"></i> ACERCA</a
+        >
+        <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+      </div>
+    </div>
+    
+    <div class="bgimg-1 mvc-display-container mvc-opacity-min" id="home">
+      <div class="mvc-display-middle" style="white-space: nowrap">
+        <span
+          class="mvc-center mvc-padding-large mvc-black mvc-xlarge mvc-wide mvc-animate-opacity"
+          >MI PORFOLIO</span>
+          
+      </div>
+    </div>
+    
+
+    <div class="mvc-content mvc-container mvc-padding-64" id="about">
+      <h3 class="mvc-center">MI Porfolio</h3>
+      <p class="mvc-center"><em>PROGRAMADOR PHP-MYSQL-JAVASCRIP-HTML-CSS</jAVASCRIP-HTML-CSS></em></p>
+      <p>
+        ZECTOR SPORT TECHNOLOGY
+        <p></p>    
+Programador Departamento de Usabilidades 2005-2009
+<p></p>
+•	Construcción, implementación y seguimiento de bases de datos para la inscripción de atletas para eventos, pagos online, consultas y estadísticas. 
+<p></p>
+•	Utilización de herramientas como PHP, MySql , JavaScript y  Html.
+<p></p>
+•	Implementación de código para envío de datos al corredor al momento de la llegada a través de SMS.
+<P> </P>
+PROGRAMADOR FREELANCE
+<p></p>
+•	Con CA-Clipper. 1996 - 2001- ABM para la Mutual de Ferrum. Control de cuotas y disponibilidades de las asociados. Informes contables. 
+<p></p>
+•	Con Visual Basic. 1999 - 2001. Programación para el gimnasio Costa Rica Gym & Tennis. ABM de los clientes, consulta de turnos. Estadística e informes.
+<p></p>
+•	Creación y mantenimiento de la pagina web de la Escuela Eisen Argentina de Taekwon-Do. Del Sasom Nim Marcelo Eisen. 
+
+      </p>
+      
+    </div>
+
+    <div class="mvc-content mvc-container mvc-padding-64" id="portfolio">
+      <h3 class="mvc-center">MIS TRABAJOS</h3>
+      <p class="mvc-center">
+        <em>Los invito a leer esta breve recorrida de mi experiencia laboral.</em>
+      </p>
+      <br />
+
+      <div class="mvc-container-img mvc-row-padding mvc-center">
+        <div>
+          <img src="/images/FortranIV.JPG" class="mvc-img" />
+          <h3> Fortran IV</h3>
+          <!--
+          <img src="images/cathedral.jpg" class="mvc-img" />
+          -->
+        </div>
+
+        <div>
+          <img src="/images/CA-Clippers.JPG " class="mvc-img" />
+          <h3> CA-Clippers </h3>
+        </div>
+
+        <div>
+          <img src="/images/PHP.JPG" class="mvc-img" />
+          <h3> PHP</h3>
+        </div>
+        <div>
+          <img src="/images/MySql.JPG" class="mvc-img" />
+          <h3> MySql</h3>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="mvc-center mvc-black mvc-padding-64 mvc-opacity mvc-hover-opacity-off"
+    >
+      <a href="#home" class="mvc-button mvc-light-grey"
+        ><i class="fa fa-arrow-up mvc-margin-right"></i>Vuelvo arriba </a
+      >
+      <div class="mvc-xlarge mvc-section">
+        <i class="fa fa-facebook-official mvc-hover-opacity"></i>
+        <i class="fa fa-instagram mvc-hover-opacity"></i>
+    <!--
+        <i class="fa fa-snapchat mvc-hover-opacity"></i>
+        <i class="fa fa-pinterest-p mvc-hover-opacity"></i>
+      --> 
+
+        <i class="fa fa-twitter mvc-hover-opacity"></i>
+        <i class="fa fa-linkedin mvc-hover-opacity"></i>
+        
+      </div>
+    </footer>
+
+    <script>
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "mvc-bar" + " mvc-card" + " mvc-animate-top" + " mvc-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " mvc-card mvc-animate-top mvc-white",
+            ""
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

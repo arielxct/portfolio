@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <title>Mi Porfolio - Acerca de</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <div class="mvc-top">
+      <div class="mvc-bar" id="myNavbar">
+        <a href="/" class="mvc-bar-item mvc-button">INICIO</a>
+        <a href="/about" class="mvc-bar-item mvc-button mvc-hide-small"
+          ><i class="fa fa-user"></i> ACERCA</a
+        >
+        <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+      </div>
+    </div>
+
+    <div class="bgimg-2 mvc-display-container mvc-opacity-min" id="home">
+      <div class="mvc-display-middle" style="white-space: nowrap">
+        <span
+          class="mvc-center mvc-padding-large mvc-black mvc-xlarge mvc-wide mvc-animate-opacity"
+          >ACERCA</span
+        >
+      </div>
+    </div>
+
+    <div class="mvc-content mvc-container mvc-padding-64" id="about">
+      <h3 class="mvc-center">Mi pasión en programar</h3>
+      <p class="mvc-center"><em>y tambien un juego y un hobby...</em></p>
+      <p>
+        PERFIL
+        <p></p>
+        Tengo una extensa experiencia en la conducción de grupos de trabajo,
+         en las áreas de logística, control de calidad y servicio al cliente.
+        Lo que me ha dado experiencia en visualizar e interpretar las necesidades
+         de los clientes y lo he volcado en área de la  informática.  
+         <p>----</p>
+         <a>
+         HABILIDADES
+         <p></p>
+         	Trabajo en equipo. Conducción de grupos numerosos.
+        	Proactivo en el cumplimiento de objetivos.
+        	Instructor Internacional de Taekwon-do (ITF) 4to Dan.
+        	Representante argentino en el mundial de Canotaje.
+      </a>
+      <p>----</p>
+      <a>
+        ESTUDIOS
+        <p></p>
+        1998. CABA,ARGENTINA
+        Técnico Superior en Informática de la Empresa.
+        CENT 49. Ciudad de Buenos Aires.
+      </a>
+      <p>----</p>
+      <a>
+        1997,CABA.ARGENTINA
+        <p></p>
+        Programador con orientación Administrativa.
+        CENT 49. Ciudad de Buenos Aires
+      </a>
+      <p>----</p>
+      <a>
+        1973 - 1978. CABA. ARG.
+        <p></p>
+        UBA. Facultad de Ingeniería. Incompleto.
+      </a>
+
+      </p>
+    </div>
+
+     <!-- Footer -->
+    <footer
+      class="mvc-center mvc-black mvc-padding-64 mvc-opacity mvc-hover-opacity-off"
+    >
+      <a href="#home" class="mvc-button mvc-light-grey"
+        ><i class="fa fa-arrow-up mvc-margin-right"></i>To the top</a
+      >
+      <div class="mvc-xlarge mvc-section">
+        <i class="fa fa-facebook-official mvc-hover-opacity"></i>
+        <i class="fa fa-instagram mvc-hover-opacity"></i>
+        <i class="fa fa-snapchat mvc-hover-opacity"></i>
+        <i class="fa fa-pinterest-p mvc-hover-opacity"></i>
+        <i class="fa fa-twitter mvc-hover-opacity"></i>
+        <i class="fa fa-linkedin mvc-hover-opacity"></i>
+      </div>
+    </footer>
+
+    <script>
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "mvc-bar" + " mvc-card" + " mvc-animate-top" + " mvc-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " mvc-card mvc-animate-top mvc-white",
+            ""
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
